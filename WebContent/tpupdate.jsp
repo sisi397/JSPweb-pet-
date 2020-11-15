@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"	pageEncoding="UTF-8"%>
 <%@ page import="tp.TpDAO"%>
 <%@ page import="tp.Tp"%>
 <%@ page import="java.io.PrintWriter"%>
@@ -62,7 +61,7 @@
 			script.println("</script>");				
 		}
 	%>
-<div id="page-wrapper">
+	<div id="page-wrapper">
 		<header id="main-header">
 			<hgroup>
 				<span><h1 class="master-title">소동물 관련 서비스&#160;&#160;&#160;&#160;&#160;&#160;&#160;</h1><br>
@@ -75,88 +74,87 @@
 				<ul class="outer-menu">
 					<li class="outer-menu-item">
 						<span class="menu-title"> <a href= "main.jsp" style="color:black"> Home </a></span>
-						<li class="outer-menu-item">
-							<span class="menu-title">About US</span>
-							<ul class="inner-menu">
-								<li class="inner-menu-item"> <a href= "#"> Our team</a>
-								</li>
-							</ul>
-						</li>
-						<li class="outer-menu-item">
-							<span class="menu-title">Our Services</span>
-							<ul class="inner-menu">
-								<li class="inner-menu-item"> <a href= "information.jsp"> 소동물 소개</a> </li>
-								<li class="inner-menu-item"> <a href= "hospital.jsp"> 동물병원 안내</a> </li>
-								<li class="inner-menu-item"> <a href= "matching.jsp"> 임시보호 매칭</a> </li>
-							</ul>
-						</li>
-						<li class="outer-menu-item">
-							<span class="menu-title"> <a href= "bbs.jsp" style="color:black"> Community </a> </span>
-						</li>
-					</ul>
+					</li>
+					<li class="outer-menu-item">
+						<span class="menu-title">About US</span>
+						<ul class="inner-menu">
+							<li class="inner-menu-item"> <a href= "#"> Our team</a></li>
+						</ul>
+					</li>
+					<li class="outer-menu-item">
+						<span class="menu-title">Our Services</span>
+						<ul class="inner-menu">
+							<li class="inner-menu-item"> <a href= "information.jsp"> 소동물 소개</a> </li>
+							<li class="inner-menu-item"> <a href= "hospital.jsp"> 동물병원 안내</a> </li>
+							<li class="inner-menu-item"> <a href= "matching.jsp"> 임시보호 매칭</a> </li>
+						</ul>
+					</li>
+					<li class="outer-menu-item">
+						<span class="menu-title"> <a href= "bbs.jsp" style="color:black"> Community </a> </span>
+					</li>
+				</ul>
+			</div>
+			<div class="pull-right">
+				<div class="search-bar">
+					<form>
+						<input type="text" class="input-search"/>
+						<input type="submit" class="input-search-submit" value= "검색"/>
+					</form>
 				</div>
-				<div class="pull-right">
-					<div class="search-bar">
-						<form>
-							<input type="text" class="input-search"/>
-							<input type="submit" class="input-search-submit" value= "검색"/>
-						</form>
-					</div>
+			</div>
+		</nav>
+		
+	<!-- 게시판 수정 -->		
+	<div id="content">
+	<section id="main-section">
+		<article>
+			<div class="container">
+				<div class="row">
+					<form method="post" action="tpupdateAction.jsp?tpID=<%= tpID %> ">
+						<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
+						<thead>
+							<tr>
+								<th colspan="2" style="background-color: #eeeeee; text-align: center;">글 수정 </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="text" class="form-control" placeholder="글 제목" name="tpTitle" maxlength="50" value="<%= tp.getTpTitle() %>" ></td>
+							</tr>
+							<tr>
+								<td><textarea class="form-control" placeholder="글 내용" name="tpContent" maxlength="2048" style="height: 350px;" ><%= tp.getTpContent() %></textarea></td>
+							</tr>
+						</tbody>
+						</table>
+						<div class="btnwrap">
+							<button type="submit" id="writebtn" >글수정</button>
+						</div>
+					</form>
 				</div>
-			</nav>
-<!-- 게시판 수정 -->		
-<div id="content">
-<section id="main-section">
-<article>
-<div class="container">
-	<div class="row">
-	<form method="post" action="tpupdateAction.jsp?tpID=<%= tpID %> ">
-		<table class="table table-striped"
-					style="text-align: center; border: 1px solid #dddddd">
-					<thead>
-						<tr>
-							<th colspan="2"
-								style="background-color: #eeeeee; text-align: center;">글 수정 </th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><input type="text" class="form-control" placeholder="글 제목" name="tpTitle" maxlength="50" value="<%= tp.getTpTitle() %>" ></td>
-						</tr>
-						<tr>
-							<td><textarea class="form-control" placeholder="글 내용" name="tpContent" maxlength="2048" style="height: 350px;" ><%= tp.getTpContent() %></textarea></td>
-						</tr>
-					</tbody>
-				</table>
-				<div class="btnwrap">
-					<button type="submit" id="writebtn" >글수정</button>
-				</div>
-			</form>
-		</div>
-	</div>
-</article>
-</section>
+			</div>
+		</article>
+	</section>
 
-<!-- 우측 내용 -->
-<aside id="main-aside">
-	<div class="aside-list">
-		<h3> 카테고리</h3>
-			<ul>
-				<li> <a href= "information.jsp" style="color:black"> 소동물 소개</a> </li>
-				<li> <a href= "hospital.jsp" style="color:black"> 동물병원 안내</a> </li>
-				<li> <a href= "matching.jsp" style="color:black"> 임시보호 매칭</a> </li>
-				<li> <a href= "bbs.jsp" style="color:black"> Community</a> </li>
-			</ul>
-		</div>
-		<div class="aside-list">
-			<h3> 최근 글</h3>
-			<ul>
-				<li> <a href= "#" style="color:black"> 데이터</a> </li>
-				<li> <a href= "#" style="color:black"> 데이터</a> </li>
-				<li> <a href= "#" style="color:black"> 데이터</a> </li>
-			</ul>
-		</div>
-	</aside>
+		<!-- 우측 내용 -->
+		<aside id="main-aside">
+			<div class="aside-list">
+				<h3> 카테고리</h3>
+				<ul>
+					<li> <a href= "information.jsp" style="color:black"> 소동물 소개</a> </li>
+					<li> <a href= "hospital.jsp" style="color:black"> 동물병원 안내</a> </li>
+					<li> <a href= "matching.jsp" style="color:black"> 임시보호 매칭</a> </li>
+					<li> <a href= "bbs.jsp" style="color:black"> Community</a> </li>
+				</ul>
+			</div>
+			<div class="aside-list">
+				<h3> 최근 글</h3>
+				<ul>
+					<li> <a href= "#" style="color:black"> 데이터</a> </li>
+					<li> <a href= "#" style="color:black"> 데이터</a> </li>
+					<li> <a href= "#" style="color:black"> 데이터</a> </li>
+				</ul>
+			</div>
+		</aside>
 	</div>
 </div>
 </body>

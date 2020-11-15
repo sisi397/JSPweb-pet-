@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -10,42 +9,24 @@
 <script type="text/javascript">
 
 function passCheck(){
-
 	var check = !/^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/;
-
 	var memId = document.getElementById("userID").value;
-
 	var memPass = document.getElementById("userPassword").value;
-
 	var memPassCheck = document.getElementById("userPasswordCheck").value;
-
 	if(memPass != memPassCheck){
-
-	document.getElementById("passCheckText").textContent = "비밀번호가 일치하지 않습니다.";
-
-	document.getElementById("passHidden").value = "no";
-
+		document.getElementById("passCheckText").textContent = "비밀번호가 일치하지 않습니다.";
+		document.getElementById("passHidden").value = "no";
 	}else if(!/^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/.test(memPass)){
-
-	document.getElementById("passCheckText").textContent = "영문,숫자,특수문자 조합 8~25자로 작성해야합니다.";
-
-	document.getElementById("passHidden").value = "no";
-
+		document.getElementById("passCheckText").textContent = "영문,숫자,특수문자 조합 8~25자로 작성해야합니다.";
+		document.getElementById("passHidden").value = "no";
 	}else if(/(\w)\1\1\1/.test(memPass)){
-
 	document.getElementById("passCheckText").textContent = "같은 문자를 4번 이상 사용하실 수 없습니다.";
-
 	document.getElementById("passHidden").value = "no";
-
 	}else{
-
-	document.getElementById("passCheckText").textContent = "";
-
-	document.getElementById("passHidden").value = "yes";
-
+		document.getElementById("passCheckText").textContent = "";
+		document.getElementById("passHidden").value = "yes";
 	}
-
-	}
+}
 </script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
 </script>
@@ -129,7 +110,7 @@ function passCheck(){
 <!-- 가입 -->
 <div id="content">
 <section id = "main-section">
-  <form method="post" action="joinAction.jsp">
+  <form method="post" action="joinAction.jsp" id="joinForm">
 	<div class="joinbox"style="text-align: center;">
 		<h1>회원가입</h1>
 			<div class="txtb" style="text-align: center;">
@@ -138,7 +119,7 @@ function passCheck(){
       </div>
 
       <div class="txtb" style="text-align: center;">
-			<input type="password" id="userPassword" name="userPassword" onKeyup="safetyPasswordPattern(this);"placeholder='비밀번호를 입력해주세요.'maxlength="20"><br/>
+			<input type="password" id="userPassword" name="userPassword" placeholder='비밀번호를 입력해주세요.'maxlength="20"><br/>
 			<span data-placeholder='userPassword'></span>
       </div>
      
@@ -156,23 +137,19 @@ function passCheck(){
       <input type="radio" id="userGender" name="userGender" autocomplete="off" value="여자">여자
    </div>
    </div>
-
       <div class="txtb" style="text-align: center;">
       <input type="text" id="userName" name="userName" placeholder='이름을 입력해주세요.'><br/>
       <span data-placeholder='name'></span>
       </div>
-
       <div class="txtb" style="text-align: center;">
       <input type="text" id="userEmail" name="userEmail" onKeyup="emailCheck();" placeholder='이메일을 입력해주세요.'><br/>
       <span data-placeholder='email'></span>
       </div>
-
-      <input type='submit' class='signup_btn' value='가입'>
+      <input type='submit' class='signup_btn'  value='가입'>
       <div class="bottom-text"><a href='login.jsp'>로그인으로 돌아가기</a>
       </div>
       </div>
-      	
-	</form>
+     </form>
 	</section>
 	<aside id="main-aside">
 					<div class="aside-list">

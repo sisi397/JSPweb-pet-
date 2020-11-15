@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="user.UserDAO" %>
 <%@ page import="java.io.PrintWriter" %>
 <% request.setCharacterEncoding("UTF-8"); %>
@@ -10,15 +9,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="css/style.css">
-<title>>JSP 게시판 웹 사이트</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>>JSP 게시판 웹 사이트</title>
 <script>
-function loginPage(){
-	location.href="login.jsp"
+	function loginPage(){
+		location.href="login.jsp"
 	}
-function passFind(){
-	location.href="passwdFind.jsp"
+	function passFind(){
+		location.href="passwdFind.jsp"
 	}
 </script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
@@ -32,31 +31,22 @@ function passFind(){
 		});
 	});
 </script>
-<style type="text/css">
-@FONT-FACE{
-	font-family: 'BMYEONSUNG';
-	src:url("font/BMYEONSUNG.ttf");
-}
-</style>
 </head>
 <body>
 <%
-request.setCharacterEncoding("utf-8");
+	request.setCharacterEncoding("utf-8");
+	String userName = request.getParameter("userName");
+	String userEmail = request.getParameter("userEmail");
+	UserDAO userDAO = new UserDAO();
+	String result = userDAO.idFindAction(userName, userEmail);
 
-String userName = request.getParameter("userName");
-
-String userEmail = request.getParameter("userEmail");
-
-UserDAO userDAO = new UserDAO();
-String result = userDAO.idFindAction(userName, userEmail);
-
-if(result != null){
-	%>
-	<%
-	String userID = null;
-	if(session.getAttribute("userID")!=null){
-		userID = (String) session.getAttribute("userID");
-	}
+	if(result != null){
+%>
+<%
+		String userID = null;
+		if(session.getAttribute("userID")!=null){
+			userID = (String) session.getAttribute("userID");
+		}
 %>
 	<div id="page-wrapper">
 		<header id="main-header">

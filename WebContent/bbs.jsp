@@ -1,6 +1,5 @@
 <%@page import="javax.security.auth.callback.ConfirmationCallback"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.io.PrintWriter"%>
 <%@ page import="bbs.BbsDAO"%>
 <%@ page import="bbs.Bbs"%>
@@ -49,10 +48,10 @@
 		}
 	%>
 	<%
-	if(session.getAttribute("userID")!=null){
-		userID = (String) session.getAttribute("userID");
-	}
-%>
+		if(session.getAttribute("userID")!=null){
+			userID = (String) session.getAttribute("userID");
+		}
+	%>
 	<div id="page-wrapper">
 		<header id="main-header">
 			<hgroup>
@@ -106,14 +105,14 @@
 				</div>
 			</nav>
 			
-<!-- 게시판 -->
-<div id="content">
-	<section id="main-section">
-		<article>
-		<div class = "bbsbox">
-			<div class = "row">
-				<table class="table table-striped" style="text-align:center; border:1px solid #dddddd"> 
-					<h2>자유 게시판</h2><br>
+	<!-- 게시판 -->
+	<div id="content">
+		<section id="main-section">
+			<article>
+			<div class = "bbsbox">
+				<div class = "row">
+					<table class="table table-striped" style="text-align:center; border:1px solid #dddddd"> 
+						<h2>자유 게시판</h2><br>
 					<thead>
 						<tr>
 							<th style="background-color: #eeeeee; text-align: center;">번호</th>
@@ -173,10 +172,10 @@
 		</article>
 	</section>
 
-<!-- 우측 내용 -->
-<aside id="main-aside">
-	<div class="aside-list">
-		<h3> 카테고리</h3>
+	<!-- 우측 내용 -->
+	<aside id="main-aside">
+		<div class="aside-list">
+			<h3> 카테고리</h3>
 			<ul>
 				<li> <a href= "information.jsp" style="color:black"> 소동물 소개</a> </li>
 				<li> <a href= "hospital.jsp" style="color:black"> 동물병원 안내</a> </li>
@@ -193,7 +192,7 @@
 			</ul>
 		</div>
 	</aside>
-</div>
-</div>
+	</div>
+	</div>
 </body>
 </html>

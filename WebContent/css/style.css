@@ -4,48 +4,47 @@
 	text-decoration: none; 
 	box-sizing: border-box; 
 	font-family: '맑은 고딕', 'Malgun Gothic', Gothic, sans-serif;
-	}
+}
 a { 
 	text-decoration: none; 
-	}
+}
 li { 
 	list-style: none; 
-	}
+}
 
 /*기본 클래스 */
 .pull-left { float: left; }
 .pull-right { float:right; }
 
 /* 2. 페이지 구성하기*/
-
 body {
 	width: 1500px; margin: 0 auto;
 	background: #aeebe7;
-	}
+}
 #page-wrapper {
 	background: white;
 	min-height:700px;
 	margin: 40px 40px; padding: 10px 20px;
 	border-radius: 15px;
 	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
-	}
+}
 .login-button{
-			border: 0;
-			outline: 0;
-		}
+	border: 0;
+	outline: 0;
+}
 /* 3. 헤더 구성하기*/
 #main-header { 
 	padding: 40px 50px; 
 	text-align: center;
-	}
+}
 .master-title {
 	font-size: 30px;
 	color: #181818;
-	}
+}
 .master-description{
 	font-size: 15px; font-weight: 500;
 	color: #383838;
-	}
+}
 
 /* 4. ������̼� �� Ǯ�ٿ� �޴� �����ϱ� */
 #main-navigation {
@@ -54,132 +53,132 @@ body {
 	margin-bottom: 20px;
 	height: 40px;
 	float: none;
-	}
+}
 .outer-menu-item {
 	float: left;
 	position: relative;
-	}
+}
 .outer-menu-item:hover {
 	background: #3e9db8;
 	color: white;
-	}
+}
 .menu-title {
 	display: block;
 	height: 30px; line-height: 30px;
 	text-align: center;
 	padding: 5px 20px;
-	}
+}
 .inner-menu {
-display: none;
-position: absolute;
-top: 40px; left: 0;
-width: 100%;
-background: white;
-box-shadow: 0 2px 6px rgba(5, 5, 5, 0.9);
-z-index: 1000;
-text-align: center;
+	display: none;
+	position: absolute;
+	top: 40px; left: 0;
+	width: 100%;
+	background: white;
+	box-shadow: 0 2px 6px rgba(5, 5, 5, 0.9);
+	z-index: 1000;
+	text-align: center;
 }
 .inner-menu-item > a {
-display: block;
-padding: 5px 10px;
-color: black;
+	display: block;
+	padding: 5px 10px;
+	color: black;
 }
 .inner-menu-item > a:hover {
-background: #3e9db8;
-color: white;
+	background: #3e9db8;
+	color: white;
 }
 
 /* �˻� ��� �߰��ϱ�(������̼� ������ �˻�) */
 .search-bar {
-height: 26px;
-padding: 7px;
+	height: 26px;
+	padding: 7px;
 }
 .input-search {
-display: block;
-float: left;
-background-color: #FFFFFF;
-border: 1px solid #CCCCCC;
-border-radius: 15px 0 0 15px;
-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-width: 120px; height: 24px;
-padding: 0 0 0 10px;
-font-size: 12px;
-color: #555555;
+	display: block;
+	float: left;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	border-radius: 15px 0 0 15px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	width: 120px; height: 24px;
+	padding: 0 0 0 10px;
+	font-size: 12px;
+	color: #555555;
 }
 .input-search:focus {
-border-color: rgba(82, 168, 236, 0.8);
-outline: 0;
-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	border-color: rgba(82, 168, 236, 0.8);
+	outline: 0;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 .input-search-submit {
-display: block;
-float: left;
-width: 50px; height: 26px;
-border-radius: 0 15px 15px 0;
-border: 1px solid #CCCCCC;
-margin-left: -1px;
-vertical-align: top;
-display: inline-block;
+	display: block;
+	float: left;
+	width: 50px; height: 26px;
+	border-radius: 0 15px 15px 0;
+	border: 1px solid #CCCCCC;
+	margin-left: -1px;
+	vertical-align: top;
+	display: inline-block;
 }
 
 /*�߾� ����*/
 #content { 
 	overflow: hidden;
-	}
+}
 #main-section {
-float: left;
-width: 710px;
+	float: left;
+	width: 710px;
 }
 #main-aside {
-float: right;
-width: 200px;
+	float: right;
+	width: 200px;
 }
 .aside-list { padding: 10px 0 30px 0; }
-		.aside-list > h3 {
-			font-size: 15px;
-			font-weight: 600;
-		}
-		.aside-list li a {
-            margin-left: 8px;
-            font-size: 13px;
-            color: #6C6C6C;
-        }
+.aside-list > h3 {
+	font-size: 15px;
+	font-weight: 600;
+}
+.aside-list li a {
+	margin-left: 8px;
+    font-size: 13px;
+    color: #6C6C6C;
+}
 /*login_style*/
 .loginbox{
 	margin : 20px; padding:25px 15px; box-sizing:border-box; 
 	position : relative; left : 35%; top:50%;
-	}
+}
 .loginbox h1{
 	width:100%; height:40px; font-size:32px; 
 	color:#aeebe7; border-bottom:1px solid #999; 
 	padding-left:20px; box-sizing:border-box; 
 	background-repeat:no-repeat; background-position: 3px 5px; 
 	margin-bottom:30px;
-	}
+}
 .userID{
 	font-size:18px; 
 	color:#666; 
 	margin-left:18px; 
 	margin-right:22px;
-	}
+}
 .userPassword{
 	font-size:18px; 
 	color:#666; 
 	margin-left: 15px; 
 	margin-right: 8px;
-	}
+}
 .chk{
 	width:100%; 
 	text-align: right; 
 	padding-right: 13px; 
 	box-sizing: border-box; 
 	margin-bottom: 20px;
-	}
+}
 .chk label{
 	font-size: 14px; 
 	color:#999; 
 	position:relative; top:-3px;
-	}
+}
 .search{
 	width: 100%; height:40px;
 	border-bottom: 1px dashed #999; 
@@ -187,10 +186,10 @@ width: 200px;
 	line-height: 40px; 
 	text-align: center; 
 	margin-bottom: 40px;
-	}
+}
 .search span{
 	font-size:13px; color:#999;
-	}
+}
 .search a{
 	font-size: 14px; 
 	text-decoration:none; 
@@ -198,15 +197,15 @@ width: 200px;
 	padding:3px 5px; 
 	border-radius: 3px; 
 	margin-left:5px;
-	}
+}
 .btnwrap{
 	width:100%; 
 	text-align: center;
-	}
+}
 .btnwrap label{
 	position:absolute;
 	left: -999em;
-	}
+}
 .btnwrap a{
 	width:134px; height: 40px; 
 	background-color: #999; 
@@ -216,7 +215,7 @@ width: 200px;
 	color:#fff; 
 	font-size: 14px; font-weight: bold; 
 	line-height:35px;
-	}
+}
 #login{
 	width:134px; height:40px; 
 	border:none; background-color: #aeebe7; 
@@ -224,13 +223,13 @@ width: 200px;
 	color:#fff; 
 	font-size:14px; font-weight:bold; 
 	position: relative; top:1px;
-	}
+}
 
 /*join_style*/
 .joinbox{
 	margin : 20px; padding:25px 15px; box-sizing:border-box; 
 	position : relative; left : 35%; top:50%; 	
-	}
+}
 
 .joinbox h1{
 	width:100%; height:40px; 
@@ -241,16 +240,16 @@ width: 200px;
 	box-sizing:border-box; 
 	background-repeat:no-repeat; background-position: 3px 5px; 
 	margin-bottom:30px;
-	}
-	.btn-group{
+}
+.btn-group{
 	padding:10px;
-	}
+}
 #userID, #userPassword, #userName, #userEmail, #userPasswordCheck{
 	width:400px; height:30px;
 	border:1px solid #999; 
 	box-sizing: border-box; 
 	margin-bottom: 18px;text-align: center;
-	}
+}
 .signup_btn{
 	width:134px; height:40px; 
 	border:none; 
@@ -259,22 +258,22 @@ width: 200px;
 	color:#fff; 
 	font-size:14px; font-weight:bold; 
 	position: relative; top:1px;
-	}
+}
 
 .form-group{
 	margin-bottom:30px;
-	}
+}
 
 .bottom-text{
-  margin-top: 30px;
-  text-align:center;
-  }
+	margin-top: 30px;
+	text-align:center;
+}
 .bottom-text a{
-  color:#08AEEA;
-  }
-  .checkText{
-  font-size:12px;
-  }
+	color:#08AEEA;
+}
+.checkText{
+	font-size:12px;
+}
 
 /*find_style*/
 .findbox{
@@ -282,7 +281,7 @@ width: 200px;
 	padding:25px 15px; 
 	box-sizing:border-box; 
 	position : relative; left : 35%; top:50%;
-	}
+}
 .findbox h1{
 	width:100%; height:40px; 
 	font-size:32px; color:#aeebe7; 
@@ -291,12 +290,12 @@ width: 200px;
 	box-sizing:border-box; 
 	background-repeat:no-repeat; background-position: 3px 5px; 
 	margin-bottom:40px;
-	}
+}
 .btn{
 	width:100%; 
 	text-align: center;
 	padding:10px;
-	}
+}
 #passFind, #idFind{
 	width:134px; height:40px; 
 	border:none; 
@@ -305,7 +304,7 @@ width: 200px;
 	color:#fff; 
 	font-size:14px; font-weight:bold; 
 	position: relative; top:1px;
-	}
+}
 #back{
 	width:134px; height:40px; 
 	border:none; 
@@ -314,7 +313,7 @@ width: 200px;
 	color:#fff; 
 	font-size:14px; font-weight:bold; 
 	position: relative; top:1px;
-	}
+}
 #finduserID, #finduserPassword2{
 	width:200px; height:50px;
     border: solid 1px rgba(210, 210, 210, 0.69);
@@ -331,7 +330,7 @@ width: 200px;
     padding: 3px 7px;
     margin-bottom: 30px;
     border : 1px solid black;
-    }
+   }
 #finduserPassword, #finduserID2{
 	width:200px; height:50px;
     border: solid 1px rgba(210, 210, 210, 0.69);
@@ -347,12 +346,12 @@ width: 200px;
     font-size: 15px;
     padding: 3px 7px;
     margin-bottom: 30px;
-    }
+   }
 #main-footer {
 	margin:0 auto; 
 	padding-top:100px; 
 	height:100px;
-	}
+}
 	
 	.title{
 	width:1090px;
@@ -437,8 +436,22 @@ width: 200px;
 	width:90px; height:35px;
 	border: solid 0px rgba(210, 210, 210, 0.69);
 	}
+	/* hospital.jsp*/
+.btn3{
+	width:100px; height:30px; 
+	border:1px solid #d5d5d5; background-color: #eee liner-gradient(to bottom, #fcfcfc, #eee);
+	border-radius: 3px; 
+	color:#000000; 
+	font-size:14px; font-weight:bold; 
+	position: relative; top:1px;
+	margin-bottom:30px;
 	
-		
+}
+		#map{
+	height: 500px;
+	width: 800px;
+	margin:20px;
+	}
 /* 게시판*/
 .bbsbox{
 	margin : 10px; padding:15px 15px; 

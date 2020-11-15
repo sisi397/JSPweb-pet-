@@ -1,6 +1,5 @@
 <%@page import="javax.security.auth.callback.ConfirmationCallback"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.io.PrintWriter"%>
 <%@ page import="tp.TpDAO"%>
 <%@ page import="tp.Tp"%>
@@ -61,35 +60,35 @@
 				<ul class="outer-menu">
 					<li class="outer-menu-item">
 						<span class="menu-title"> <a href= "main.jsp" style="color:black"> Home </a></span>
-						<li class="outer-menu-item">
-							<span class="menu-title">About US</span>
-							<ul class="inner-menu">
-								<li class="inner-menu-item"> <a href= "#"> Our team</a>
-								</li>
-							</ul>
-						</li>
-						<li class="outer-menu-item">
-							<span class="menu-title">Our Services</span>
-							<ul class="inner-menu">
-								<li class="inner-menu-item"> <a href= "information.jsp"> 소동물 소개</a> </li>
-								<li class="inner-menu-item"> <a href= "hospital.jsp"> 동물병원 안내</a> </li>
-								<li class="inner-menu-item"> <a href= "matching.jsp"> 임시보호 매칭</a> </li>
-							</ul>
-						</li>
-						<li class="outer-menu-item">
-							<span class="menu-title"> <a href= "bbs.jsp" style="color:black"> Community </a> </span>
-						</li>
-					</ul>
+					</li>
+					<li class="outer-menu-item">
+						<span class="menu-title">About US</span>
+						<ul class="inner-menu">
+							<li class="inner-menu-item"> <a href= "#"> Our team</a></li>
+						</ul>
+					</li>
+					<li class="outer-menu-item">
+						<span class="menu-title">Our Services</span>
+						<ul class="inner-menu">
+							<li class="inner-menu-item"> <a href= "information.jsp"> 소동물 소개</a> </li>
+							<li class="inner-menu-item"> <a href= "hospital.jsp"> 동물병원 안내</a> </li>
+							<li class="inner-menu-item"> <a href= "matching.jsp"> 임시보호 매칭</a> </li>
+						</ul>
+					</li>
+					<li class="outer-menu-item">
+						<span class="menu-title"> <a href= "bbs.jsp" style="color:black"> Community </a> </span>
+					</li>
+				</ul>
+			</div>
+			<div class="pull-right">
+				<div class="search-bar">
+					<form>
+						<input type="text" class="input-search"/>
+						<input type="submit" class="input-search-submit" value= "검색"/>
+					</form>
 				</div>
-				<div class="pull-right">
-					<div class="search-bar">
-						<form>
-							<input type="text" class="input-search"/>
-							<input type="submit" class="input-search-submit" value= "검색"/>
-						</form>
-					</div>
-				</div>
-			</nav>
+			</div>
+		</nav>
 			
 <!-- 게시판 -->
 <div id="content">
@@ -160,27 +159,27 @@
 		</article>
 	</section>
 
-<!-- 우측 내용 -->
-<aside id="main-aside">
-	<div class="aside-list">
-		<h3> 카테고리</h3>
-			<ul>
-				<li> <a href= "information.jsp" style="color:black"> 소동물 소개</a> </li>
-				<li> <a href= "hospital.jsp" style="color:black"> 동물병원 안내</a> </li>
-				<li> <a href= "matching.jsp" style="color:black"> 임시보호 매칭</a> </li>
-			</ul>
-		</div>
-		<div class="aside-list">
-			<h3> 최근 글</h3>
-			<ul>
-				<li> <a href= "#" style="color:black"> 데이터</a> </li>
-				<li> <a href= "#" style="color:black"> 데이터</a> </li>
-				<li> <a href= "#" style="color:black"> 데이터</a> </li>
-				<li> <a href= "#" style="color:black"> 데이터</a> </li>
-			</ul>
-		</div>
-	</aside>
-</div>
+		<!-- 우측 내용 -->
+		<aside id="main-aside">
+			<div class="aside-list">
+				<h3> 카테고리</h3>
+				<ul>
+					<li> <a href= "information.jsp" style="color:black"> 소동물 소개</a> </li>
+					<li> <a href= "hospital.jsp" style="color:black"> 동물병원 안내</a> </li>
+					<li> <a href= "matching.jsp" style="color:black"> 임시보호 매칭</a> </li>
+					<li> <a href= "bbs.jsp" style="color:black"> Community</a> </li>
+				</ul>
+			</div>
+			<div class="aside-list">
+				<h3> 최근 글</h3>
+				<ul>
+					<li> <a href= "#" style="color:black"> 데이터</a> </li>
+					<li> <a href= "#" style="color:black"> 데이터</a> </li>
+					<li> <a href= "#" style="color:black"> 데이터</a> </li>
+				</ul>
+			</div>
+		</aside>
+	</div>
 </div>
 </body>
 </html>

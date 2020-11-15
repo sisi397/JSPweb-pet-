@@ -48,7 +48,7 @@
 		}
 		Bbs bbs = new BbsDAO().getBbs(bbsID);
 	%>
-<div id="page-wrapper">
+	<div id="page-wrapper">
 		<header id="main-header">
 			<hgroup>
 				<span><h1 class="master-title">소동물 관련 서비스&#160;&#160;&#160;&#160;&#160;&#160;&#160;</h1><br>
@@ -61,48 +61,46 @@
 				<ul class="outer-menu">
 					<li class="outer-menu-item">
 						<span class="menu-title"> <a href= "main.jsp" style="color:black"> Home </a></span>
-						<li class="outer-menu-item">
-							<span class="menu-title">About US</span>
-							<ul class="inner-menu">
-								<li class="inner-menu-item"> <a href= "#"> Our team</a>
-								</li>
-							</ul>
-						</li>
-						<li class="outer-menu-item">
-							<span class="menu-title">Our Services</span>
-							<ul class="inner-menu">
-								<li class="inner-menu-item"> <a href= "information.jsp"> 소동물 소개</a> </li>
-								<li class="inner-menu-item"> <a href= "hospital.jsp"> 동물병원 안내</a> </li>
-								<li class="inner-menu-item"> <a href= "matching.jsp"> 임시보호 매칭</a> </li>
-							</ul>
-						</li>
-						<li class="outer-menu-item">
-							<span class="menu-title"> <a href= "bbs.jsp" style="color:black"> Community </a> </span>
-						</li>
-					</ul>
+					</li>
+					<li class="outer-menu-item">
+						<span class="menu-title">About US</span>
+						<ul class="inner-menu">
+							<li class="inner-menu-item"> <a href= "#"> Our team</a></li>
+						</ul>
+					</li>
+					<li class="outer-menu-item">
+						<span class="menu-title">Our Services</span>
+						<ul class="inner-menu">
+							<li class="inner-menu-item"> <a href= "information.jsp"> 소동물 소개</a> </li>
+							<li class="inner-menu-item"> <a href= "hospital.jsp"> 동물병원 안내</a> </li>
+							<li class="inner-menu-item"> <a href= "matching.jsp"> 임시보호 매칭</a> </li>
+						</ul>
+					</li>
+					<li class="outer-menu-item">
+						<span class="menu-title"> <a href= "bbs.jsp" style="color:black"> Community </a> </span>
+					</li>
+				</ul>
+			</div>
+			<div class="pull-right">
+				<div class="search-bar">
+					<form>
+						<input type="text" class="input-search"/>
+						<input type="submit" class="input-search-submit" value= "검색"/>
+					</form>
 				</div>
-				<div class="pull-right">
-					<div class="search-bar">
-						<form>
-							<input type="text" class="input-search"/>
-							<input type="submit" class="input-search-submit" value= "검색"/>
-						</form>
-					</div>
-				</div>
-			</nav>
+			</div>
+		</nav>
 			
-<!-- 게시글 보기 -->
-<div id="content">
-<section id="main-section">
-<article>
-<div class="container">
-	<div class="row">
-		<table class="table table-striped"
-					style="text-align: center; border: 1px solid #dddddd">
+	<!-- 게시글 보기 -->
+	<div id="content">
+		<section id="main-section">
+			<article>
+				<div class="container">
+					<div class="row">
+					<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
 					<thead>
 						<tr>
-							<th colspan="3"
-								style="background-color: #eeeeee; text-align: center;">글 보기 </th>
+							<th colspan="3" style="background-color: #eeeeee; text-align: center;">글 보기 </th>
 						</tr>
 					</thead>
 					<tbody>
@@ -125,7 +123,6 @@
 						</tr>
 					</tbody>
 				</table>
-					
 				<a href = "bbs.jsp" id="nextbtn">목록</a>
 				<%
 				//글작성자 본인일시 수정 삭제 가능 
@@ -136,15 +133,15 @@
 				<%					
 					}
 				%>
-		</div>
-	</div>
-</article>
-</section>
+				</div>
+			</div>
+		</article>
+	</section>
 
-<!-- 우측 내용 -->
-<aside id="main-aside">
-	<div class="aside-list">
-		<h3> 카테고리</h3>
+	<!-- 우측 내용 -->
+	<aside id="main-aside">
+		<div class="aside-list">
+			<h3> 카테고리</h3>
 			<ul>
 				<li> <a href= "information.jsp" style="color:black"> 소동물 소개</a> </li>
 				<li> <a href= "hospital.jsp" style="color:black"> 동물병원 안내</a> </li>
@@ -162,6 +159,6 @@
 		</div>
 	</aside>
 	</div>
-</div>
+	</div>
 </body>
 </html>

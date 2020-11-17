@@ -321,7 +321,6 @@
         </div>
 
 
-    </section>
     <!-- 라이트박스 -->
     <div id="darken-background">
         <div id="lightbox">
@@ -421,6 +420,7 @@
 						</ul>
 					</div>
 				</aside>
+    </section>
 				</div>
 			<footer id="main-footer">
 				<p align="center">Created By ConSeQ </p>

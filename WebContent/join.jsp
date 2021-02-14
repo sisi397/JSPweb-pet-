@@ -15,16 +15,12 @@ function passCheck(){
 	var memPassCheck = document.getElementById("userPasswordCheck").value;
 	if(memPass != memPassCheck){
 		document.getElementById("passCheckText").textContent = "비밀번호가 일치하지 않습니다.";
-		document.getElementById("passHidden").value = "no";
 	}else if(!/^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/.test(memPass)){
 		document.getElementById("passCheckText").textContent = "영문,숫자,특수문자 조합 8~25자로 작성해야합니다.";
-		document.getElementById("passHidden").value = "no";
 	}else if(/(\w)\1\1\1/.test(memPass)){
 	document.getElementById("passCheckText").textContent = "같은 문자를 4번 이상 사용하실 수 없습니다.";
-	document.getElementById("passHidden").value = "no";
 	}else{
 		document.getElementById("passCheckText").textContent = "";
-		document.getElementById("passHidden").value = "yes";
 	}
 }
 </script>

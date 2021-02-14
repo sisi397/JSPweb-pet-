@@ -5,9 +5,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!--  웹 페이지 크기 결정 (화면 너비, 초기크기, viewport크기가 보여줘야할 내용보다 작으면 내용을 줄여서 보여줌. 임의 줄임을 방지) -->
-  <meta name="description" content=""> <!-- 웹 페이지 요약 정보 -->
-  <meta name="author" content="">
-
   <title>로그인</title>
 
   <link rel="stylesheet" href="css/style.css">
@@ -137,11 +134,9 @@
 						</ul>
 					</div>
 				</aside>
-				<!-- 
 	<footer id="main-footer">
 				<p align="center">Created By ConSeQ </p>
 	</footer>
--->
 	</div>
 </body>
 </html>

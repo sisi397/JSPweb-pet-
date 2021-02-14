@@ -11,8 +11,8 @@
 	<meta charset="UTF-8">
 	<title>소동물 관련 서비스 제작</title>
 	<link rel="stylesheet" href="css/style.css">
-	<!--  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
-	</script>-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+	</script>
 	<script>
 		$(document).ready(function () {
 			$('.outer-menu-item').hover(function () {
@@ -186,7 +186,7 @@
 	   	  		}
 			}
 		</script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT7sSTMO5sgyqu_1l0KuaIK_QAyv0U44c&callback=initMap" async defer></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT7sSTMO5sgyqu_1l0KuaIK_QAyv0U44c&callback=initMap"></script>
 	</div>	
 	<%
 		ArrayList<Hospital> list=new ArrayList<Hospital>();

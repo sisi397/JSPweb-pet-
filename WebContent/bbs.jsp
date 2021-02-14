@@ -1,4 +1,4 @@
-<%@page import="javax.security.auth.callback.ConfirmationCallback"%>
+<%@ page import="javax.security.auth.callback.ConfirmationCallback"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.io.PrintWriter"%>
 <%@ page import="bbs.BbsDAO"%>
@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>자유 게시판</title>
 	<link rel="stylesheet" type="text/css"  href="css/bbs_style.css">
 
@@ -45,11 +45,6 @@
 		int pageNumber = 1; //기본 페이지 넘버
 		if(request.getParameter("pageNumber") != null){
 			pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
-		}
-	%>
-	<%
-		if(session.getAttribute("userID")!=null){
-			userID = (String) session.getAttribute("userID");
 		}
 	%>
 	<div id="page-wrapper">

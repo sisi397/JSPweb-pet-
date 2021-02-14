@@ -11,9 +11,6 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/jquery.masonry.min.js"></script>
     <script src="js/jquery.imagesloaded.min.js"></script>
-    <!--  <link rel="stylesheet" href="js/jquery.lightbox-0.5.css"/>
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <script src="js/jquery.lightbox-0.5.js"></script>--> 
     <script>
 		$(document).ready(function () {
 			$('.outer-menu-item').hover(function () {
@@ -44,9 +41,6 @@
             function showLightBox() {
                 // 라이트박스를 보이게 합니다.
                 $('#darken-background').show();
-                $('#darken-background').css('top', $(window).scrollTop());
-                // 스크롤을 못하게 합니다.
-                $('body').css('overflow', 'hidden');
             }
 
             function hideLightBox() {
@@ -76,9 +70,6 @@
             function showLightBox() {
                 // 라이트박스를 보이게 합니다.
                 $('#darken-background2').show();
-                $('#darken-background2').css('top', $(window).scrollTop());
-                // 스크롤을 못하게 합니다.
-                $('body').css('overflow', 'hidden');
             }
 
             function hideLightBox() {
@@ -108,9 +99,6 @@
             function showLightBox() {
                 // 라이트박스를 보이게 합니다.
                 $('#darken-background3').show();
-                $('#darken-background3').css('top', $(window).scrollTop());
-                // 스크롤을 못하게 합니다.
-                $('body').css('overflow', 'hidden');
             }
 
             function hideLightBox() {
@@ -140,9 +128,6 @@
             function showLightBox() {
                 // 라이트박스를 보이게 합니다.
                 $('#darken-background4').show();
-                $('#darken-background4').css('top', $(window).scrollTop());
-                // 스크롤을 못하게 합니다.
-                $('body').css('overflow', 'hidden');
             }
 
             function hideLightBox() {
@@ -172,9 +157,6 @@
             function showLightBox() {
                 // 라이트박스를 보이게 합니다.
                 $('#darken-background5').show();
-                $('#darken-background5').css('top', $(window).scrollTop());
-                // 스크롤을 못하게 합니다.
-                $('body').css('overflow', 'hidden');
             }
 
             function hideLightBox() {

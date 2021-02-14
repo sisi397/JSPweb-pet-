@@ -34,7 +34,7 @@ public class HospitalDAO {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
-			SQL = "SELECT * FROM HOSPITAL WHERE category LIKE ? AND region LIKE ? AND CONCAT(category, region, address, name, phone) LIKE ? ORDER BY category DESC LIMIT " + pageNumber * 5 + ", " + pageNumber * 5 + 6;
+			SQL = "SELECT * FROM HOSPITAL WHERE category LIKE ? AND region LIKE ? AND CONCAT(category, region, address, name, phone) LIKE ? ORDER BY category DESC LIMIT " + pageNumber * 5 + ", 5";
 			pstmt = conn.prepareStatement(SQL);
 			pstmt.setString(1, "%" + category + "%");
 			pstmt.setString(2, "%" + region + "%");

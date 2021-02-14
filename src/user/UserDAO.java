@@ -79,7 +79,7 @@ public class UserDAO {
 	}
 	
 	public int passwdFindAction(String userID, String userName, String userEmail) {
-		String SQL = "SELECT userPassword FROM USER WHERE userID = ?, userName =?, userEmail =?";
+		String SQL = "SELECT userPassword FROM USER WHERE userID = ? and userName =? and userEmail =?";
 		try {
 			pstmt = conn.prepareStatement(SQL);
 			pstmt.setString(1,userID);
